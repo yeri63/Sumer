@@ -1,7 +1,7 @@
 # Sumer
 <div align="center">
   
-![Screenshot of Sumer](https://github.com/yeri63/Sumer/blob/master/sumer.png)
+![Screenshot of Sumer](sumer.png)
 </div>
 <p>Imagine that you are living in the city of Sumer, in the year 3000 BC. You are the king and each year you must decide how much of the city's store of grain will be given to the people as food, how much will be used for seed, and how much will be kept in storage.</p>
 <p>At the beginning of each year your steward, Hamurabi, makes a report and asks for your decisions. The following information will assist you in formulating those decisions.</p>

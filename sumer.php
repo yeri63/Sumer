@@ -2,6 +2,8 @@
     session_start();
     header("Content-type: text/xml");
 
+	$urlPath = "http://192.168.3.250/cisco/sumer.php";
+
     # Recall prior variable state.
     $id = $_SESSION['id'] ?? "";
 
@@ -260,19 +262,19 @@
             if ($cmd == 0) {
                 echo "  <SoftKeyItem>";
                 echo "	<Name>Buy/Sell</Name>";
-                echo "	<URL>http://diskstation/cisco/sumer.php?key=1</URL>";
+                echo "	<URL>$urlPath?key=1</URL>";
                 echo "	<Position>1</Position>";
                 echo "  </SoftKeyItem>";
             
                 echo "  <SoftKeyItem>";
                 echo "    <Name>Feed</Name>";
-                echo "	<URL>http://diskstation/cisco/sumer.php?key=3</URL>";
+                echo "	<URL>$urlPath?key=3</URL>";
                 echo "    <Position>2</Position>";
                 echo "  </SoftKeyItem>";
             
                 echo "  <SoftKeyItem>";
                 echo "    <Name>Plant</Name>";
-                echo "	<URL>http://diskstation/cisco/sumer.php?key=4</URL>";
+                echo "	<URL>$urlPath?key=4</URL>";
                 echo "    <Position>3</Position>";
                 echo "  </SoftKeyItem>";
             }
@@ -294,7 +296,7 @@
         case 4 :
             echo "<CiscoIPPhoneInput>";
             echo "  <Title>Sumer - Year $z</Title>";
-            echo "  <URL method=\"post\">http://diskstation/cisco/sumer.php</URL>";
+            echo "  <URL method=\"post\">$urlPath</URL>";
             
             echo "  <InputItem>";
             echo "    <DisplayName>$units</DisplayName>";
@@ -311,7 +313,7 @@
             
             echo "  <SoftKeyItem>";
             echo "    <Name>Cancel</Name>";
-            echo "    <URL>http://diskstation/cisco/sumer.php?key=0</URL>";
+            echo "    <URL>$urlPath?key=0</URL>";
             echo "    <Position>3</Position>";
             echo "  </SoftKeyItem>";
             
